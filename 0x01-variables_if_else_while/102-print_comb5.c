@@ -24,7 +24,7 @@ int main(void)
 				putchar((n % 10) + 48);
 				if (m != 98 || n != 99)
 				{
-					putchar('.');
+					putchar(',');
 					putchar(' ');
 				}
 			}
