@@ -11,11 +11,11 @@ int main(void)
 
 	while (m < 1024)
 	{
-		if ((m % == 0) || (m % 5 == 0))
+		if ((m % 3 == 0) || (m % 5 == 0))
 		{
 			n += m;
 		}
-		m++
+		m++;
 	}
 	printf("%d\n", n);
 	return (0);
