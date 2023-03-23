@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - this prints numbers from 1 to 0 with fizz and buzz  inter-mixed
  *
