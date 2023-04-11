@@ -14,6 +14,7 @@ char *argstostr(int ac, char **av)
 	int len = 0;
 	int m;
 	int pos = 0;
+	int a = 0;
 
 	if (ac == 0 || av == NULL)
 	{
@@ -31,7 +32,7 @@ char *argstostr(int ac, char **av)
 	}
 	for (m = 0 ; m < ac ; m++)
 	{
-		strcpy(aout + pos, av[m]);
+		strcpy(aout + pos + a, av[m]);
 		pos += strlen(av[m]);
 		aout[pos++] = '\n';
 	}
