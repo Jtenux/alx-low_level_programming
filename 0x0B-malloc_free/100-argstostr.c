@@ -25,7 +25,10 @@ char *argstostr(int ac, char **av)
 	}
 	aout = malloc(sizeof(char) * len);
 	if (aout == NULL)
+	{
+		free(aout);
 		return (NULL);
+	}
 	for (m = 0 ; m < ac ; m++)
 	{
 		strcpy(aout + pos, av[m]);
