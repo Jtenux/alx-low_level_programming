@@ -21,8 +21,7 @@ void print_all(const char * const format, ...)
 			{
 				printf(", ");
 				break;
-			}
-			m++;
+			} m++;
 		}
 		switch (format[n])
 		{
@@ -44,8 +43,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", strr);
 				break;
-		}
-		n++;
+		} n++;
 	}
 	va_end(args), printf("\n");
 }
